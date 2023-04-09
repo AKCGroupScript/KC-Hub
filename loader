@@ -1,3 +1,31 @@
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+    v:Disable()
+end
+------------
+local range = 99e9
+
+--// Variable \--
+local player = game:GetService("Players").LocalPlayer
+
+--// Script \--
+game:GetService("RunService").RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+------------
 anything = true
 
 while true do
@@ -5,6 +33,21 @@ while true do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-341.2608947753906, 1.4515074491500854, -1300.2459716796875)
 ------------
     wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.7529296875, 2.2404062747955322, -1581.142578125)
+------------
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-183.4942169189453, 2.0784990787506104, -1605.0078125)
+------------
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-233.28509521484375, 2.099980354309082, -1311.5537109375)
+------------
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71.96591186523438, 1.5266348123550415, -1356.795654296875)
+------------
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(95.4079818725586, 2.1022162437438965, -1214.9693603515625)
+------------
+    wait(0.5)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-352.0386047363281, 2.1619396209716797, -1458.874755859375)
-    wait(3.1)
+    wait(3)
 end
