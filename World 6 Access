@@ -1,0 +1,21 @@
+anything = true
+
+while true do
+    wait()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(77.4358597, 3.19017792, -1359.26147, 0.933146358, 0, 0.359496683, 0, 1, 0, -0.359496683, 0, 0.933146358)
+------------
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99.428215, 3.18593979, -1215.23914, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+------------
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.228043, 57.2740288, -240.132706, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+------------
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-199.093216, 3.10595703, -165.962616, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+------------
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-199.093216, 3.10595703, -97.6254349, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+------------
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-200.881424, 3.10595703, -29.3093262, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end
